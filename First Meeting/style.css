@@ -1,0 +1,29 @@
+.center-text{
+    width: 100%;
+    text-align: center;
+}
+
+.border-red{
+    padding: 10px;   
+    border: 2px #ff2222 dotted;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+}
+
+.container-row{
+    display:flex;
+}
+
+.center-div-flex{
+    display:flex;
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+
+img{
+    width: 400px;
+    height: 300px;
+}
