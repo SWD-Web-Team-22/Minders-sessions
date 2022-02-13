@@ -1,3 +1,15 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    color:inherit;
+}
+
+body{
+    background: #aaa;
+}
+
+
 .center-text{
     width: 100%;
     text-align: center;
@@ -23,7 +35,24 @@
     align-content: space-around;
 }
 
+nav div{
+    padding: 10px;
+    color: #bbb;
+}
+
+nav{
+    padding-top: 2px;
+    font-size: larger;
+    background-color: #222;
+}
+
 img{
     width: 400px;
     height: 300px;
+}
+
+.img-div{
+    padding: 20px;
+    width: 219px;
+    height: 258px;
 }
