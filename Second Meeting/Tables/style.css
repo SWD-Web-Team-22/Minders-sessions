@@ -1,0 +1,34 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+th{
+    height: 50px;
+    text-align: left;
+    
+}
+
+td, th{
+    vertical-align: center;
+    height: 50px;
+    padding-left: 30px;
+    
+}
+
+table{
+    width: 100%;
+    /*Makes the borders collapsed around each other*/
+    border-collapse: collapse;
+}
+
+
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+tr:hover{
+    background-color: black;
+    color:white;
+}

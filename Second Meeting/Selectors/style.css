@@ -1,0 +1,51 @@
+*{
+    /*Selects everything*/
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+        /*Selects element*/
+    background-color: #666;
+}
+
+#grandparent{
+    /*Select certain id*/
+    color: #070;
+}
+
+#parent{
+    color: #700;
+}
+
+#child{
+    color: #007;
+}
+
+
+#grandparent>h1{
+    /*Selects child or a descendant*/
+    color: white;
+}
+
+.final-div{
+    /*Class selector*/
+    background-color: #fff;
+}
+
+[href]{
+    /*
+        All elements that contains href attribute
+        href ~= value : selects all attributes that contain the word "value" in its value
+    */
+    text-decoration: none;
+    font-size: 40px;
+}
+
+[href ~= something]{
+    color: black;
+}
+
+/*
+    https://www.w3schools.com/cssref/css_selectors.asp
+*/

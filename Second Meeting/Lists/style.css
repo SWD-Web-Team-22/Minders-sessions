@@ -1,0 +1,32 @@
+ul li{
+    list-style-type: circle;
+    margin: 20px;
+    padding: 20px;
+}
+
+ul li {
+    list-style-type: square;
+}
+
+ul li {
+    list-style-image: url("../square.png");
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul li {
+    border: 5px solid red;
+}
+
+ul li {
+    list-style-position: inside;
+}
+
+
+/*Short hand*/
+ul li {
+    list-style: inside url("../square.png");
+}
+
