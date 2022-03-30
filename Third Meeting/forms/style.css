@@ -1,0 +1,85 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+}
+
+body{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #15172b;
+}
+
+form{
+    margin: 100px auto;
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+
+    /* Glassmorphism */
+    background: rgba( 0, 0, 0, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
+input, textarea{
+    display:block;
+    padding: 20px;
+    margin: 20px;
+    width: 70vw;
+    background-color: #15172b;
+    outline: none;
+    border: none;
+    color: #fff;
+    
+}
+
+input[type=submit]{
+    position: relative;
+    bottom: 10px;
+    /* top: 10px; */
+    width: 15%;
+}
+
+input:hover, textarea:hover{
+    box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem #bc13fe,
+    0 0 0.8rem #bc13fe,
+    0 0 2.8rem #bc13fe,
+    inset 0 0 1.3rem #bc13fe; 
+}
+
+input:focus, textarea:focus{
+    box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem #4613fe,
+    0 0 0.8rem #6d13fe,
+    0 0 2.8rem #bc13fe,
+    inset 0 0 1.3rem #bc13fe; 
+}
+
+.container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+}
+
+.container>input{
+    display: inline;
+    width: 45%;
+}
+
+textarea{
+    height: 100px;
+}
