@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    /*FONT*/
+    font-size: 18px;
+}
+
+body {
+    /*BACKGROUND*/
+    width: 100%;
+    background-color: #15172B;
+}
+
+
+/*HERE*/
+form {
+    width: fit-content;
+    margin: 100px auto;
+    height: fit-content;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    /*GLASSMORPHISM*/
+
+    background: rgba( 0, 0, 0, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
+/*HERE*/
+input, textarea{
+    display: block;
+    background: #15172B;
+    outline: none;
+    border: 1px solid transparent;
+    margin: 20px;
+    padding: 5px 0px 5px 10px;
+    width: 100%;
+    max-width: calc(calc(100%) - calc(20px + 20px));
+
+}
+
+input {
+    height: 50px;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+.container{
+    display: flex;
+    width: 70vw;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.container>input{
+    width:50%;
+}
+
+.submit-container{
+    width: 100%;
+    position: relative;
+    height: 75px;
+}
+
+input[type=submit]{
+    margin: 20px;
+    width: 25%;
+    margin-right: auto;
+    position: absolute;
+    right: 0px;
+}
+
+
+
+input:hover, textarea:hover{
+    box-shadow: 50px 10px 20px #fff; 
+}
+
+input:focus, textarea:focus{
+    box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem #b425ec,
+    0 0 0.8rem #6f22ec,
+    0 0 2.8rem #bc13fe,
+    0 0 1.3rem #bc13fe; 
+}
+
+#text-shadow{
+    text-shadow: 10px 10px 10px red;
+    font-size: 30px;
+}
+
