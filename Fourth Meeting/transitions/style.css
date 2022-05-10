@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --red : #aa2222;
+    --green : #33aa33;
+    --blue : #3333aa;
+}
+
+.parent{
+    display: flex;
+    /* transition-timing-function: ease-in-out; */
+}
+
+.container{
+    width: 200px;
+    height: 200px;
+    border: 10px solid var(--blue);
+    background-color : var(--red);
+    margin : 20px auto;
+    transition: transform 2s;
+
+
+    /* 
+        --> ease - specifies a transition effect with a slow start, then fast, then end slowly (this is default)
+        --> linear - specifies a transition effect with the same speed from start to end
+        --> ease-in - specifies a transition effect with a slow start
+        --> ease-out - specifies a transition effect with a slow end
+        --> ease-in-out - specifies a transition effect with a slow start and end
+     */
+
+    transition-timing-function: linear;
+    /* transition-delay: 10s; */
+}
+
+.parent:hover>#container-1{
+    /* rotation */
+    transform: rotate(360deg);
+}
+
+.parent:hover>#container-2{
+    /* rotation */
+    transform: rotate(-360deg);
+}
+
+#container-3{
+    transition: width 1s, height 2s, background-color 1s;
+}
+
+#container-3:hover{
+    width: 400px;
+    height: 400px;
+    background-color: var(--green);
+}

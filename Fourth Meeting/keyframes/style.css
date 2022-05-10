@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --red : #aa2222;
+    --green : #33aa33;
+    --blue : #3333aa;
+}
+
+@keyframes endless-rotation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes sha2lbaz{
+    from{
+        transform: rotate(0deg);
+        right: 0px;
+    }
+    to{
+        transform: rotate(360deg);
+        right: calc(100% - 200px - 10px*2 - 20px*2);
+    }
+}
+
+@keyframes sha2lbaz-ray7-gy{
+    0%{
+        transform: rotate(0deg);
+        right: 0px;
+    }
+    50%{
+        transform: rotate(360deg);
+        right: calc(100% - 200px - 10px - 20px);
+    }
+    100%{
+        transform: rotate(720deg);
+        right: 0px;
+    }
+}
+
+.parent{
+    display: flex;
+}
+
+.container{
+    width: 200px;
+    height: 200px;
+    border: 10px solid var(--blue);
+    background-color : var(--red);
+    margin : 20px auto;
+    /* animation: endless-rotation 1000ms infinite linear; */
+}
+
+#container{
+    width: 200px;
+    height: 200px;
+    border: 10px solid var(--blue);
+    background-color : var(--red);
+    margin : 20px;
+    right: 0%;
+    position: absolute;
+    animation: sha2lbaz-ray7-gy 10s infinite linear;
+    /* animation: sha2lbaz 5s infinite alternate linear; */
+}
+
+#parent2{
+    margin: 50px;
+    border: 10px solid var(--green);
+    position: relative;
+}
+
+
+/* https://www.w3schools.com/css/css3_animations.asp */
